@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Tran Ngoc Han — Data Science, AI/ML research, analytics, and software engineering." />
+  <meta name="description" content="Portfolio of Tran Ngoc Han, a Data Science student working on GenAI, retrieval evaluation, Vietnamese NLP, and learning analytics." />
   <meta name="theme-color" content="#08111f" />
-  <title>Tran Ngoc Han — Data, AI & Software · Pastel Edition</title>
+  <title>Tran Ngoc Han — Applied AI & Data Science</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
       <a href="#skills">Skills</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <button class="nav-cv" data-open-cv>View CV</button>
     </nav>
     <button class="header-cta" data-open-cv>View CV <span>↗</span></button>
     <button class="menu-button" aria-label="Open menu" aria-expanded="false">Menu</button>
@@ -40,7 +41,7 @@
             <div class="title-words"><span class="title-lead">I turn complex</span><span>data into</span><span class="accent">useful systems.</span></div>
           </div>
         </div>
-        <p class="hero-intro">Data Science student working across analytics, AI/ML research, dataset quality, and backend development. I care about reliable evidence, clear decisions, and software that solves practical problems.</p>
+        <p class="hero-intro">I’m a Data Science student building LLM applications that retrieve and cite evidence. My work also covers Vietnamese NLP datasets, learning analytics APIs, and educational data mining.</p>
         <div class="hero-actions">
           <a class="button primary" href="#work">Explore my work <span>↓</span></a>
           <a class="button secondary" href="#contact">Contact info <span>↓</span></a>
@@ -76,18 +77,34 @@
 
     <section id="work" class="section-shell section-block">
       <div class="section-heading reveal">
-        <div><p class="section-index">01 / SELECTED WORK</p><h2>Projects with depth,<br>not just demos.</h2></div>
-        <p>Research, analysis, and engineering projects that show how I approach data quality, experimentation, and implementation.</p>
+        <div><p class="section-index">01 / SELECTED WORK</p><h2>Selected projects</h2></div>
+        <p>GenAI and learning projects, with additional work in Vietnamese NLP and applied analytics.</p>
       </div>
       <div class="filter-bar reveal" role="group" aria-label="Filter projects">
         <button class="filter active" data-filter="all">All work</button>
+        <button class="filter" data-filter="genai">GenAI</button>
         <button class="filter" data-filter="research">Research</button>
         <button class="filter" data-filter="analytics">Analytics</button>
         <button class="filter" data-filter="engineering">Engineering</button>
       </div>
       <div class="project-grid">
+        <article class="project reveal" data-category="genai engineering">
+          <div class="project-top"><span class="project-type">NASA Space Apps Challenge 2026 · Team Project</span></div>
+          <h3>Flame Atlas</h3>
+          <p>A research assistant for NASA combustion data with 61 sources and 1,371 document chunks. I worked on hybrid retrieval, DeepSeek tool calling, citation validation, and responses that flag insufficient evidence.</p>
+          <p>I compared BM25, dense, and hybrid retrieval using Recall@k and MRR and reviewed answers for correctness and citation support.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>DeepSeek</span><span>Retrieval Evaluation</span></div>
+        </article>
+
+        <article class="project reveal" data-category="genai engineering">
+          <div class="project-top"><span class="project-type">Personal Project · In Progress</span></div>
+          <h3>VietStudy</h3>
+          <p>I’m building a Vietnamese PDF question-answering app that combines keyword search and embeddings to retrieve evidence and cite source pages.</p>
+          <p>The evaluation pipeline is in progress and will compare retrieval configurations, answer correctness, citation support, and response latency.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>pgvector</span><span>Sentence Transformers</span></div>
+        </article>
         <article class="project feature reveal" data-category="research">
-          <div class="project-top"><span class="project-number">01</span><span class="project-type">Research · Multimodal AI</span></div>
+          <div class="project-top"><span class="project-type">Research · Multimodal AI</span></div>
           <div class="project-visual visual-sarcasm" aria-hidden="true">
             <div class="modality text-mod">TEXT</div><div class="connector">+</div><div class="modality image-mod">IMAGE</div><div class="result-mod">MULTIMODAL<br><b>SARCASM</b></div>
           </div>
@@ -101,25 +118,25 @@
         </article>
 
         <article class="project reveal" data-category="research analytics">
-          <div class="project-top"><span class="project-number">02</span><span class="project-type">NLP · Data Product</span></div>
+          <div class="project-top"><span class="project-type">NLP · Data Product</span></div>
           <div class="mini-chart" aria-label="Abstract bar visualization"><i style="--h:58%"></i><i style="--h:86%"></i><i style="--h:42%"></i><i style="--h:71%"></i><i style="--h:52%"></i><i style="--h:96%"></i><i style="--h:64%"></i><i style="--h:78%"></i></div>
           <h3>UIT-ViNRE</h3>
-          <p>Constructed and verified a Vietnamese news-related Facebook dataset with 9,202 labeled posts, an 18-label taxonomy, a 17-topic benchmark, and an engagement analysis dashboard.</p>
+          <p>I contributed to building and verifying 9,202 labeled Vietnamese Facebook posts about news. The project includes an 18-label taxonomy, a 17-topic classification benchmark, and a dashboard for exploring engagement.</p>
           <div class="tags"><span>Python</span><span>Topic Classification</span><span>Annotation QA</span><span>Dashboard</span></div>
           <a class="text-link" href="https://github.com/NgocHan1211/UIT-ViNRE-Vietnamese-News-and-Social-Media-Dataset" target="_blank" rel="noreferrer">View project <span>↗</span></a>
         </article>
 
         <article class="project reveal" data-category="analytics">
-          <div class="project-top"><span class="project-number">03</span><span class="project-type">Analytics · Prediction</span></div>
+          <div class="project-top"><span class="project-type">Analytics · Prediction</span></div>
           <div class="map-visual" aria-hidden="true"><span class="city city-a">HCMC</span><span class="city city-b">HANOI</span><span class="city city-c">DA NANG</span><svg viewBox="0 0 300 120"><path d="M18,91 C52,24 102,70 137,36 S214,87 282,24"/><circle cx="18" cy="91" r="5"/><circle cx="137" cy="36" r="5"/><circle cx="282" cy="24" r="5"/></svg></div>
           <h3>Real Estate Price Analysis</h3>
-          <p>Integrated more than 17,789 property listings into PostgreSQL, built a cleaning and feature-engineering pipeline, analyzed regional pricing patterns, and compared predictive models.</p>
+          <p>I used PostgreSQL to integrate more than 17,789 property listings. I cleaned the data, engineered features, and compared regression models while exploring how prices vary by region.</p>
           <div class="tags"><span>PostgreSQL</span><span>EDA</span><span>Feature Engineering</span><span>Regression</span></div>
           <a class="text-link" href="https://github.com/pqtran28/Real-Estate-Price-Prediction" target="_blank" rel="noreferrer">View project <span>↗</span></a>
         </article>
 
         <article class="project reveal" data-category="engineering">
-          <div class="project-top"><span class="project-number">04</span><span class="project-type">Backend · Learning Analytics</span></div>
+          <div class="project-top"><span class="project-type">Backend · Learning Analytics</span></div>
           <div class="api-visual" aria-hidden="true"><span>POST /reviews</span><span>GET /reviews/due</span><span>GET /dashboard</span><b>200 OK</b></div>
           <h3>KITS Korean Learning App</h3>
           <p>Contributed to a TypeScript and Express analytics service with review scheduling, REST endpoints, input validation, persistent review state, and aggregate learning metrics.</p>
@@ -128,10 +145,10 @@
         </article>
 
         <article class="project reveal" data-category="analytics research">
-          <div class="project-top"><span class="project-number">05</span><span class="project-type">Educational Data Mining</span></div>
+          <div class="project-top"><span class="project-type">Educational Data Mining</span></div>
           <div class="classification-visual" aria-hidden="true"><span>LOW</span><span>MEDIUM</span><span>HIGH</span></div>
           <h3>MOOC Completion Prediction</h3>
-          <p>Prepared and validated MOOCCubeX course data, analyzed class imbalance, merged labeled records with extracted features, and experimented with SVM and RNN models for three-class prediction.</p>
+          <p>I used MOOCCubeX course data to explore three-class completion prediction. I checked class imbalance and joined labels with extracted features before experimenting with SVM and RNN models.</p>
           <div class="tags"><span>Data Validation</span><span>Class Imbalance</span><span>SVM</span><span>RNN</span></div>
         </article>
       </div>
@@ -139,19 +156,14 @@
 
     <section id="experience" class="section-shell section-block">
       <div class="section-heading reveal">
-        <div><p class="section-index">02 / EXPERIENCE</p><h2>Learning by building.</h2></div>
-        <p>Practical experience across AI applications, research collaboration, and multidisciplinary software projects.</p>
+        <div><p class="section-index">02 / EXPERIENCE</p><h2>Internship experience</h2></div>
+        <p>Document processing and LLM integration for payroll policy review.</p>
       </div>
       <div class="timeline reveal">
         <div class="timeline-item">
-          <div class="timeline-date">07.2026 — 09.2026</div>
+          <div class="timeline-date">07.2026 — 10.2026</div>
           <div class="timeline-marker"></div>
-          <div class="timeline-content"><div class="role-line"><h3>AI Agent Development Intern</h3><span>TPC Business Solution</span></div><p>Contributed to an AI agent for payroll automation, with exposure to business workflow analysis, data handling, and automated-output validation.</p><div class="tags"><span>Agentic AI</span><span>Business Workflow</span><span>Output Validation</span></div></div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2026 — PRESENT</div>
-          <div class="timeline-marker"></div>
-          <div class="timeline-content"><div class="role-line"><h3>Research & Project Work</h3><span>UIT · KITS</span></div><p>Building Vietnamese AI datasets, evaluating machine-learning systems, and developing analytics services in collaborative research and software teams.</p><div class="tags"><span>Research</span><span>Git/GitHub</span><span>Jira</span><span>Trello</span></div></div>
+          <div class="timeline-content"><div class="role-line"><h3>AI Agent Development Intern</h3><span>TPC Business Solution</span></div><p>Built PDF parsing, OCR, and chunking components for a payroll policy workflow. Integrated LLM-based extraction and a Streamlit interface so users could review structured results.</p><div class="tags"><span>PDF Parsing &amp; OCR</span><span>LLM Extraction</span><span>Streamlit</span></div></div>
         </div>
       </div>
     </section>
@@ -166,7 +178,7 @@
           <div class="skill-card reveal"><span class="skill-icon">DA</span><h3>Data & Analytics</h3><p>Python, Pandas, NumPy, SQL, PostgreSQL, EDA, statistical testing, feature engineering, Power BI, Streamlit.</p></div>
           <div class="skill-card reveal"><span class="skill-icon">ML</span><h3>AI & Machine Learning</h3><p>Classification, regression, Scikit-learn, XGBoost, model evaluation, SHAP, NLP, multimodal datasets.</p></div>
           <div class="skill-card reveal"><span class="skill-icon">SE</span><h3>Software Engineering</h3><p>TypeScript, Express, REST APIs, HTTP, input validation, Git/GitHub, Docker fundamentals, Linux CLI.</p></div>
-          <div class="skill-card reveal"><span class="skill-icon">QA</span><h3>Quality & Collaboration</h3><p>Data quality validation, guideline-based annotation, consistency checking, technical documentation, Jira Scrum boards, Trello.</p></div>
+          <div class="skill-card reveal"><span class="skill-icon">AI</span><h3>GenAI &amp; Retrieval</h3><p>LLM API integration, structured extraction, hybrid search, page citations, Recall@k, and MRR.</p></div>
         </div>
         <div class="learning-strip reveal"><span>NOW LEARNING</span><strong>LangChain</strong><i></i><strong>AWS Machine Learning Engineer — Associate</strong><i></i><strong>AI application deployment</strong></div>
       </div>
@@ -176,14 +188,14 @@
       <div class="about-title reveal"><p class="section-index">04 / ABOUT</p><h2>Curious across disciplines.<br>Rigorous with evidence.</h2></div>
       <div class="about-copy reveal">
         <p>I am a Data Science student at the University of Information Technology, Vietnam National University Ho Chi Minh City. My work sits where data, language, and software meet.</p>
-        <p>I enjoy problems that require both investigation and implementation: defining a reliable dataset, uncovering patterns, evaluating a model, or turning logic into an API. I am developing toward roles in data analytics, applied AI, and software quality.</p>
+        <p>I enjoy problems that require both investigation and implementation: defining a reliable dataset, uncovering patterns, evaluating a model, or turning logic into an API. I’m interested in applying retrieval and evaluation to AI features that help people learn.</p>
         <div class="education-card"><span>EDUCATION</span><strong>Bachelor of Data Science</strong><p>University of Information Technology · VNU-HCM<br>2023 — 2027 (expected) · GPA 3.5/4.0</p></div>
       </div>
       <div class="credential-list reveal">
         <p class="mono-label">CERTIFICATIONS & RECOGNITION</p>
         <div><span>2026</span><p>Google Data Analytics Professional Certificate</p></div>
         <div><span>2026</span><p>Google AI Professional Certificate</p></div>
-        <div><span>2026</span><p>TOPCIT · Score 318 · Level 2</p></div>
+        <div><span>2026</span><p>TOPCIT · Score 414 · Level 3</p></div>
         <div><span>2024</span><p>VSTEP English Proficiency · B2</p></div>
       </div>
     </section>
@@ -214,24 +226,16 @@
   </footer>
 
   <dialog class="cv-modal" id="cv-modal" aria-labelledby="cv-title">
-    <div class="cv-window">
-      <div class="cv-toolbar"><span>CURRICULUM VITAE · 2026</span><button data-close-cv aria-label="Close CV">Close ×</button></div>
-      <div class="cv-sheet">
-        <header class="cv-head"><div><p>TRAN NGOC HAN</p><h2 id="cv-title">Data Science · AI/ML · Software</h2></div><div class="cv-contact"><a href="mailto:ngochann051211@gmail.com">ngochann051211@gmail.com</a><a href="https://github.com/NgocHan1211" target="_blank" rel="noreferrer">github.com/NgocHan1211</a><span>Ho Chi Minh City, Vietnam</span></div></header>
-        <section class="cv-section"><h3>Profile</h3><p>Data Science student with project experience across analytics, AI/ML research, dataset quality, and backend development. Experienced with Python, SQL, PostgreSQL, TypeScript, REST APIs, machine learning, and collaborative Git workflows.</p></section>
-        <div class="cv-columns">
-          <div>
-            <section class="cv-section"><h3>Experience</h3><div class="cv-entry"><div><strong>AI Agent Development Intern</strong><span>07/2026 – 09/2026</span></div><em>TPC Business Solution</em><p>Contributed to an AI agent for payroll automation, business workflow analysis, data handling, and automated-output validation.</p></div></section>
-            <section class="cv-section"><h3>Selected Projects</h3><div class="cv-entry"><strong>ViMMSarc-Fine</strong><p>Research author of a 7,355-sample Vietnamese multimodal sarcasm dataset paper accepted at KSE 2026.</p></div><div class="cv-entry"><strong>UIT-ViNRE</strong><p>Constructed and verified a 9,202-post Vietnamese news dataset, classification benchmark, and engagement dashboard.</p></div><div class="cv-entry"><strong>Real Estate Price Analysis</strong><p>Integrated and analyzed 17,789+ listings in PostgreSQL and compared property-price prediction models.</p></div><div class="cv-entry"><strong>KITS Korean Learning App</strong><p>Contributed TypeScript and Express analytics-service features, REST endpoints, review scheduling, and metrics.</p></div></section>
-          </div>
-          <aside>
-            <section class="cv-section"><h3>Education</h3><div class="cv-entry"><strong>Bachelor of Data Science</strong><em>University of Information Technology · VNU-HCM</em><p>2023 – 2027 expected<br>GPA: 3.5/4.0</p></div></section>
-            <section class="cv-section"><h3>Core Skills</h3><p>Python · SQL · PostgreSQL · Pandas · NumPy · Power BI · Streamlit · Scikit-learn · XGBoost · TypeScript · Express · REST APIs · Git/GitHub · Jira · Trello</p></section>
-            <section class="cv-section"><h3>Certifications</h3><p>Google Data Analytics Professional Certificate<br>Google AI Professional Certificate<br>TOPCIT 318 · Level 2<br>VSTEP English B2</p></section>
-          </aside>
-        </div>
+    <div class="cv-toolbar">
+      <h2 id="cv-title">Tran Ngoc Han · CV</h2>
+      <div class="cv-actions">
+        <a href="assets/Tran_Ngoc_Han_CV.pdf" target="_blank" rel="noopener">Open PDF in new tab ↗</a>
+        <button data-close-cv aria-label="Close CV" autofocus>Close ×</button>
       </div>
     </div>
+    <object class="cv-pdf" data="assets/Tran_Ngoc_Han_CV.pdf" type="application/pdf" aria-label="Tran Ngoc Han's CV">
+      <p>Open the PDF in a new tab to view the CV.</p>
+    </object>
   </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite">Email copied!</div>
   <script src="script.js"></script>
